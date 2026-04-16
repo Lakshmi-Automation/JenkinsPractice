@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">17</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">91</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">calc.CalculatorTestPositive</td><td><a href="#m0">testAdd</a></td><td rowspan="1">1714733435508</td><td rowspan="1">2</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">calc.CalculatorTestNegative</td><td><a href="#m1">testAddNegative</a></td><td rowspan="1">1714733435486</td><td rowspan="1">5</td></tr><tr class="passedeven"><td><a href="#m2">testDivideByZero</a></td><td rowspan="1">1714733435493</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m3">testDivideNegative</a></td><td rowspan="1">1714733435498</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m4">testMultiplyNegative</a></td><td rowspan="1">1714733435501</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m5">testSubtractNegative</a></td><td rowspan="1">1714733435504</td><td rowspan="1">1</td></tr><tr class="passedodd"><td rowspan="4">calc.CalculatorTestPositive</td><td><a href="#m6">testDivide</a></td><td rowspan="1">1714733435515</td><td rowspan="1">1</td></tr><tr class="passedodd"><td><a href="#m7">testMultiply</a></td><td rowspan="1">1714733435518</td><td rowspan="1">0</td></tr><tr class="passedodd"><td><a href="#m8">testSquare</a></td><td rowspan="1">1714733435520</td><td rowspan="1">1</td></tr><tr class="passedodd"><td><a href="#m9">testSubtract</a></td><td rowspan="1">1714733435523</td><td rowspan="1">1</td></tr><tr class="passedeven"><td rowspan="8">calc.Parameterization</td><td><a href="#m10">testAdditionWithDataProvider</a></td><td rowspan="4">1714733435534</td><td rowspan="4">0</td></tr><tr class="passedeven"><td><a href="#m11">testAdditionWithDataProvider</a></td></tr><tr class="passedeven"><td><a href="#m12">testAdditionWithDataProvider</a></td></tr><tr class="passedeven"><td><a href="#m13">testAdditionWithDataProvider</a></td></tr><tr class="passedeven"><td><a href="#m14">testSubtractionWithDataProvider</a></td><td rowspan="4">1714733435545</td><td rowspan="4">1</td></tr><tr class="passedeven"><td><a href="#m15">testSubtractionWithDataProvider</a></td></tr><tr class="passedeven"><td><a href="#m16">testSubtractionWithDataProvider</a></td></tr><tr class="passedeven"><td><a href="#m17">testSubtractionWithDataProvider</a></td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">calc.CalculatorTestPositive#testAdd</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [4] but found [5]
+	at calc.CalculatorTestPositive.testAdd(CalculatorTestPositive.java:12)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">calc.CalculatorTestNegative#testAddNegative</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">calc.CalculatorTestNegative#testDivideByZero</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.ArithmeticException: / by zero
+	at calc.CalculatorTestNegative.testDivideByZero(CalculatorTestNegative.java:13)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">calc.CalculatorTestNegative#testDivideNegative</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">calc.CalculatorTestNegative#testMultiplyNegative</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">calc.CalculatorTestNegative#testSubtractNegative</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">calc.CalculatorTestPositive#testDivide</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">calc.CalculatorTestPositive#testMultiply</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">calc.CalculatorTestPositive#testSquare</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">calc.CalculatorTestPositive#testSubtract</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">calc.Parameterization#testAdditionWithDataProvider</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>-2</td><td>6</td><td>4</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">calc.Parameterization#testAdditionWithDataProvider</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>2</td><td>3</td><td>5</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">calc.Parameterization#testAdditionWithDataProvider</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>-4</td><td>-1</td><td>-5</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">calc.Parameterization#testAdditionWithDataProvider</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>7</td><td>3</td><td>10</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">calc.Parameterization#testSubtractionWithDataProvider</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>-2</td><td>6</td><td>-8</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">calc.Parameterization#testSubtractionWithDataProvider</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>-4</td><td>-1</td><td>-3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">calc.Parameterization#testSubtractionWithDataProvider</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>2</td><td>3</td><td>-1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">calc.Parameterization#testSubtractionWithDataProvider</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>7</td><td>3</td><td>4</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
