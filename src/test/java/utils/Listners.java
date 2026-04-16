@@ -22,8 +22,13 @@ public class Listners extends Base implements ITestListener{
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		System.out.println("Test Failed: " + result.getName());
-	    extentTest.fail(result.getThrowable());
+		// Check if this test will be retried
+		if (result.getMethod().getRetryAnalyzer(result) != null) {
+			System.out.println("Test Failed: " + result.getName() + " (Will retry if attempts remain)");
+		} else {
+			System.out.println("Test Failed: " + result.getName());
+		}
+		extentTest.fail(result.getThrowable());
 	}
 
 	@Override
