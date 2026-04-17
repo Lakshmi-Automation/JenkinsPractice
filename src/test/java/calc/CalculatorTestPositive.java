@@ -1,11 +1,18 @@
 package calc;
 
 import static org.testng.Assert.assertEquals;
+
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import basicfunc.Base;
 
 public class CalculatorTestPositive extends Base {
-	
+    private Calculator calculator;
+
+    @BeforeMethod
+    public void setUp() {
+        calculator = new Calculator();  // Initialize calculator before each test
+    }
     // Positive test cases
     @Test(groups="fail")
     public void testAdd() { 

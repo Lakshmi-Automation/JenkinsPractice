@@ -1,6 +1,8 @@
 package calc;
 
 import static org.testng.Assert.assertNotEquals;
+
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import basicfunc.Base;
@@ -8,9 +10,15 @@ import basicfunc.Base;
 
 public class CalculatorTestNegative extends Base {
     private Calculator calculator;
+
+
+    @BeforeMethod
+    public void setUp() {
+        calculator = new Calculator();  // Initialize calculator before each test
+    }
 	@Test(expectedExceptions = ArithmeticException.class)
     public void testDivideByZero() {
-    	int i=1/0;
+        calculator.div(1, 0);
     }
 
     @Test
