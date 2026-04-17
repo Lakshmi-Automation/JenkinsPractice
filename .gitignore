@@ -1,1 +1,35 @@
+# Maven
 /target/
+target/
+
+# TestNG
+test-output/
+test-output-*
+
+# Extent Reports
+extentReport/
+
+# IDE
+.idea/
+.project
+.classpath
+.settings/
+*.iml
+*.ipr
+*.iws
+
+# Jenkins
+.jenkins
+jenkins-*.xml
+builds/
+workspace/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Compiled
+*.class
