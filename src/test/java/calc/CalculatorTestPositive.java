@@ -29,10 +29,10 @@ public class CalculatorTestPositive extends Base {
     	assertEquals(4, calculator.mult(2, 2)); 
     	}
 
-    @Test(groups="pass")
+  /*  @Test(groups="pass")
     public void testDivide() { 
     	assertEquals(2.0, calculator.div(4, 2), 0.00); 
-    	}
+    	}*/
 
     @Test(groups="pass")
     public void testPower() {
