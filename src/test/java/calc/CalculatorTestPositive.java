@@ -28,8 +28,8 @@ public class CalculatorTestPositive extends Base {
     	}
 
     @Test(groups="pass")
-    public void testSquare() { 
-    	assertEquals(3.0, calculator.sqrt(9));
+    public void testPower() {
+    	assertEquals(8, calculator.power(2, 3));
     	}
     
     

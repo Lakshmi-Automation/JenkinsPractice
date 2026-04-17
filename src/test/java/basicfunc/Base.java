@@ -1,5 +1,6 @@
 package basicfunc;
 
+import calc.Calculator;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -12,7 +13,6 @@ import org.testng.annotations.Listeners;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import com.epam.tat.module4.Calculator;
 
 import utils.Listners;
 

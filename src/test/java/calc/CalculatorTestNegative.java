@@ -7,7 +7,7 @@ import basicfunc.Base;
 
 
 public class CalculatorTestNegative extends Base {
-	
+    private Calculator calculator;
 	@Test(expectedExceptions = ArithmeticException.class)
     public void testDivideByZero() {
     	int i=1/0;

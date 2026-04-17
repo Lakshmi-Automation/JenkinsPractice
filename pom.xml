@@ -28,11 +28,11 @@
 			<version>5.1.1</version>
 		</dependency>
 
-		<dependency>
+		<!--<dependency>
 			<groupId>epam.calculator</groupId>
 			<artifactId>epam.calculator.demo</artifactId>
 			<version>1</version>
-		</dependency>
+		</dependency>-->
 	</dependencies>
 <build>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven
