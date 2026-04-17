@@ -3,7 +3,7 @@
 <suite name="Calculator Suite" parallel="tests">
     <test name="Calculator Test">
         <classes>
-            <class name="calc.CalculatorTest"/>
+            <class name="calc.CalculatorTestPositive"/>
         </classes>
     </test>
 </suite>

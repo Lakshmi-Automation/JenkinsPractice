@@ -4,8 +4,8 @@
   <test thread-count="5" parallel="tests" name="Test">
   <groups>
             <run>
-               <!--  <include name="pass"/> -->
-                <!-- or <exclude name="fail"/> to exclude -->
+                 <include name="pass"/>
+                  <exclude name="fail"/>
             </run>
         </groups>
     <classes>
